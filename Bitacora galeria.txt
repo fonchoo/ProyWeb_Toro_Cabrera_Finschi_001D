@@ -1,0 +1,10 @@
+Domingo 31 de marzo: Se creo la pagina principal de la galeria y se implementaron las imagenes,
+Se hizo un prototipo inicial de lo que mostraria la pagina al hacer click en una foto/producto.
+
+Lunes 1 de abril: Se mejoró las paginas de los productos, se le agrego el footer y el menu a todas las páginas.
+Se acomodaron las imagenes de la galeria.
+
+Martes 2 de abril: Se trato de hacer que la pagina de la galeria sea responsiva, no se pudo. El footer presentaba un error en el fondo, solucionado
+
+Miercoles 3 de abril: Se le agregaron medias queries al css para que la pagina de la galeria sea responsiva.
+Las medias queries se utilizaron para disminuir el tamaño de las imagenes llegado cierto punto.
