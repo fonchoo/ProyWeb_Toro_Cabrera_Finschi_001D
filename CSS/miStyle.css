@@ -8,6 +8,11 @@ h1 {
     margin-top: 40px; /* Margen superior para el encabezado */
     text-align: center; /* Centrar el texto del encabezado */
 }
+h2 {
+    margin-top: 20px; /* Margen superior para el encabezado */
+    text-align: center; /* Centrar el texto del encabezado */
+    font-size: 20px;
+}
 
 .contenedor-imagenes {
     display: flexbox; /* Utilizamos flexbox para alinear las imágenes */
@@ -229,4 +234,27 @@ las redes sociales*/
 
 .back {
     text-align: center; /* Centra horizontalmente el contenido del elemento .back */
+}
+
+input {
+    width: 300px; /* Ajusta el ancho del input */
+    height: 40px; /* Ajusta la altura del input */
+    font-size: 40px; /* Ajusta el tamaño del texto */
+    margin-bottom: 10px; /* Agrega espacio entre el input y los botones */
+    align-items: center;
+}
+button {
+    width: 70px; /* Ajusta el ancho de los botones */
+    height: 70px; /* Ajusta la altura de los botones */
+    font-size: 40px; /* Ajusta el tamaño del texto */
+    margin: 5px; /* Agrega espacio entre los botones */
+    align-items: center;
+
+}
+.contenedor-botones {
+    margin-left: 400px;
+}
+#clock {
+    font-size: 24px;
+    text-align: left;
 }
