@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/miStyle.css"> <!-- Enlace al archivo CSS externo -->
+    <title>Naturea</title>
+    <script src="https://kit.fontawesome.com/f879910058.js" crossorigin="anonymous"></script>
+
+    <style>
+        /* Estilos CSS en línea */
+        .pie-pagina{
+            margin-top: 100px;
+        }    
+        .contenedor {
+            display: flex; /* Utiliza Flexbox para el diseño */
+            flex-direction: row; /* Los elementos secundarios se colocan en una fila */
+            border: 1px solid black; /* Borde de 1px sólido negro alrededor del contenedor */
+            padding: 0px; /* Elimina el relleno del contenedor */
+            align-items: auto; /* Alinea los elementos secundarios verticalmente automáticamente */
+            margin:auto;
+        }
+
+        .contenedor img {
+            max-width: 100%; /* La imagen se ajusta al ancho máximo del contenedor */
+            height: auto; /* Mantiene la relación de aspecto de la imagen */
+            margin-left: 0px; /* Elimina el margen izquierdo de la imagen */
+        }
+        .contenedor p {
+            padding: 10px; /* Añade un relleno de 10px alrededor del párrafo */
+            max-width: 100%; /* El párrafo se ajusta al ancho máximo del contenedor */
+            font-size: 40px; /* Tamaño de fuente del párrafo */
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1 align="center">PetDog & Amigos</h1>
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor1"> <!-- Barra de navegación -->
+            <img class="img-nav" src="images/logo.jpg" alt=""> <!-- Logo -->
+            <a href="index.html">Inicio</a> <!-- Enlace a la página de inicio -->
+            <a href="#">Quienes Somos</a> <!-- Enlace a la página "Quienes Somos" -->
+            <a href="galeria.html">Galeria</a> <!-- Enlace a la galería -->
+        </nav>
+    </div>
+    <div id="clock"></div>
+    <div class="contenedor">
+        <img src="images/Naturea2.png" alt="Texto alternativo"> <!-- Imagen del producto -->
+        <p>
+            Nombre: Naturea Adult <br> <!-- Información sobre el producto -->
+            Valor: $45.000<br>
+            Descripción: Naturea Adult está diseñado específicamente para perros adultos, ofreciendo una combinación adecuada de proteínas, grasas y carbohidratos para mantener la energía y la vitalidad de tu mascota. <!-- Descripción del producto -->
+        </p>
+    </div>
+    <script src="javascript/java.js"></script>
+    <div class="back">
+        <a href="galeria.html">Volver a la Galeria de Productos</a>
+    </div>
+    <!-- Pie de página -->
+</body>
+<footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <h2>INTEGRANTES</h2>
+                <p>Esteban Toro</p>
+                <p>Macarena Cabrera</p>
+                <p>Patricio Finschi</p>
+            </div>
+            <div class="box">
+                <h2>SÍGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/PetDogyAmigos" id="face" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://www.instagram.com/petdogyamigos" id="insta" class="fa fa-instagram" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>PET DOG & AMIGOS</b> -  Todos los Derechos Reservados.</small>
+        </div>
+</footer>
+</html>
