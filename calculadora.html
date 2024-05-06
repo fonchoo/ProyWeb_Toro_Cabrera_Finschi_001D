@@ -5,9 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/miStyle.css"> <!-- Enlace al archivo CSS externo -->
     <title>Calculadora</title>
-    <
+    <script src="https://kit.fontawesome.com/f879910058.js" crossorigin="anonymous"></script>
 </head>
+<style>
+    #clock {
+        position: absolute;
+  }
+  .pie-pagina{
+    margin-top: 70px;
+} 
+</style>
 <body>
+    <h1 align="center">PetDog & Amigos</h1>
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor"> <!-- Barra de navegación -->
+            <img class="img-nav" src="images/logo.jpg" alt=""> <!-- Logo -->
+            <a href="index.html">Inicio</a> <!-- Enlace a la página de inicio -->
+            <a href="pagina2/quienessomos.html">Quienes Somos</a> <!-- Enlace a la página "Quienes Somos" -->
+            <a href="#">Galeria</a> <!-- Enlace a la propia galería -->
+        </nav>
+    </div>
+    <div id="clock"></div>
     <div class="contenedor-botones">
         <input type="text" id="input" readonly>
         <br>
@@ -33,4 +51,24 @@
 
     <script src="javascript/java.js"></script>
 </body>
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <h2>INTEGRANTES</h2>
+            <p>Esteban Toro</p>
+            <p>Macarena Cabrera</p>
+            <p>Patricio Finschi</p>
+        </div>
+        <div class="box">
+            <h2>SÍGUENOS</h2>
+            <div class="red-social">
+                <a href="https://www.facebook.com/PetDogyAmigos" id="face" class="fa fa-facebook" target="_blank"></a> <!-- Enlace a la página de Facebook -->
+                <a href="https://www.instagram.com/petdogyamigos" id="insta" class="fa fa-instagram" target="_blank"></a> <!-- Enlace a la página de Instagram -->
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2024 <b>PET DOG & AMIGOS</b> -  Todos los Derechos Reservados.</small>
+    </div>
+</footer>
 </html>
