@@ -23,6 +23,8 @@ getRazas(data => {
                         <h2>${dogBreed.name}</h2>
                         <span> ${dogBreed.temperament} </span>
                         <p>${dogBreed.bred_for}</p>
+                        <p>${dogBreed.breed_group}</p>
+                        <p>${dogBreed.life_span}</p>
                         
                     </article>
                 `);
