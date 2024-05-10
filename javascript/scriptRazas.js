@@ -15,10 +15,10 @@ getRazas(data => {
             .then(response => response.json())
             .then(imageData => {
                 const imageUrl = imageData.url;
-                const article = document.createRange().createContextualFragment(/*html */`
+                const article = document.createRange().createContextualFragment(`
                     <article>
                         <div class="image-container">
-                            <img src="${imageUrl}" alt="raza">
+                            <img src="${imageUrl}" alt="raza" style="max-width: 100px; height: auto;">
                         </div>
                         <h2>${dogBreed.name}</h2>
                         <span> ${dogBreed.temperament} </span>
