@@ -57,55 +57,57 @@ const translations = {
     }
 };
 
-// Función para traducir los campos
+// Función para traducir los campos de las razas de perros
 function translateField(field, value) {
     if (translations[field] && translations[field][value]) {
-        return translations[field][value];
+        return translations[field][value]; // Devuelve la traducción si está disponible
     }
     // Si no hay traducción disponible, devuelve el valor original
     return value;
 }
 
-// Esta función obtiene los datos de las razas de perros y los procesa
+// Función para obtener los datos de las razas de perros de la API
 function getRazas(done) {
-    const results = fetch("https://api.thedogapi.com/v1/breeds");
+    const results = fetch("https://api.thedogapi.com/v1/breeds"); // Realiza una solicitud GET a la API
 
     results
-        .then(response => response.json())
+        .then(response => response.json()) // Parsea la respuesta a JSON
         .then(data => {
-            done(data);
+            done(data); // Llama a la función 'done' con los datos obtenidos
         });
 }
 
-// Esta función traduce los datos y los muestra en el documento HTML
+// Función principal que obtiene los datos de las razas de perros, los traduce y los muestra en la página HTML
 getRazas(data => {
     let count = 0; // Contador para rastrear el número de razas mostradas
     data.forEach(dogBreed => {
-        if (count < 9) { // Mostrar solo los datos de las primeras 10 razas
-            // Traducir los campos
+        if (count < 9) { // Muestra solo los datos de las primeras 10 razas
+            // Traduce los campos relevantes de la raza de perro actual
             const translatedName = translateField('name', dogBreed.name);
             const translatedBredFor = translateField('bred_for', dogBreed.bred_for);
             const translatedBreedGroup = translateField('breed_group', dogBreed.breed_group);
             const translatedLifeSpan = translateField('life_span', dogBreed.life_span);
             const translatedTemperament = translateField('temperament', dogBreed.temperament);
 
-            // Hacer una solicitud para obtener la URL de la imagen usando reference_image_id
+            // Realiza una solicitud para obtener la URL de la imagen usando 'reference_image_id'
             fetch(`https://api.thedogapi.com/v1/images/${dogBreed.reference_image_id}`)
-                .then(response => response.json())
+                .then(response => response.json()) // Parsea la respuesta a JSON
                 .then(imageData => {
-                    const imageUrl = imageData.url;
+                    const imageUrl = imageData.url; // Obtiene la URL de la imagen
+                    // Crea un artículo con los datos traducidos y la imagen de la raza de perro actual
                     const article = document.createRange().createContextualFragment(`
                         <article>
                             <div class="image-container">
                                 <img src="${imageUrl}" alt="raza" style="max-width: 100px; height: auto;">
                             </div>
-                            <h2>${translatedName}</h2>
-                            <span> ${translatedTemperament} </span>
-                            <p>${translatedBredFor}</p>
-                            <p>${translatedBreedGroup ? translatedBreedGroup : ''}</p>
-                            <p>${translatedLifeSpan}</p>
+                            <h2>Nombre de raza: ${translatedName}</h2>
+                            <span> Temperamento: ${translatedTemperament} </span>
+                            <p>Proposito de crianza: ${translatedBredFor}</p>
+                            <p>Grupo de raza: ${translatedBreedGroup ? translatedBreedGroup : ''}</p>
+                            <p>Tiempo de vida: ${translatedLifeSpan}</p>
                         </article>
                     `);
+                    // Agrega el artículo al elemento principal en el documento HTML
                     const main = document.querySelector("main");
                     main.append(article);
                 })
@@ -113,7 +115,7 @@ getRazas(data => {
                     console.error('Error al obtener la URL de la imagen:', error.message);
                 });
 
-            count++; // Incrementar el contador después de mostrar los datos de una raza
+            count++; // Incrementa el contador después de mostrar los datos de una raza
         }
     });
 });
