@@ -6,6 +6,7 @@ var errorNombre = document.getElementById('errorNombre');
 var errorApellido = document.getElementById('errorApellido');
 var errorMail = document.getElementById('errorMail');
 var errorMensaje = document.getElementById('errorMensaje');
+var mensajeExito = document.getElementById('mensajeExito');
 
 function enviarFormulario() {
     console.log('Enviando formulario...')
