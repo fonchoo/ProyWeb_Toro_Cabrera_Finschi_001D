@@ -118,6 +118,21 @@ p{
     border-radius: 2rem;/*esquinas redondeadas*/
 }
 
+button{
+    margin-top: 1.5rem; /*separacion hacia arriba*/
+    margin-bottom: 1rem; /*separacion hacia abajo*/
+    background-color: rgb(233, 202, 164);
+    padding: 5px;      /*espacio borde del boton y el contenido dentro del boton */
+    font-size: 14px;   /*tamaño fuente*/
+    border-radius: 3.5px;
+
+    
+}
+
+button:hover{
+    background-color: tan;
+}
+
 .imagenarticle{
     width: 25rem;
     height: 15rem;
@@ -158,6 +173,8 @@ h3{
     color: black;
     cursor: pointer; /* Cambia el cursor a una mano al pasar el ratón */
 }
+
+
 
 
 /*pagina formulario*/
@@ -321,3 +338,15 @@ las redes sociales*/
     }
     
 }
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    .contenedorarticle {
+      flex-direction: column;
+    }
+  
+    .imagenarticle {
+      width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+      height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+    }
+  }

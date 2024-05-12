@@ -65,3 +65,15 @@ function enviarFormulario() {
         return true; // Si no hay errores, se envía el formulario
     }
 }
+
+
+// Obtener el botón y el contenedor de video
+var botonMostrarVideo = document.getElementById("mostrarVideo");
+var videoContainer = document.getElementById("videoContainer");
+
+// Añadir evento al botón para mostrar el video cuando se presiona
+botonMostrarVideo.addEventListener("click", function() {
+    // Mostrar el contenedor de video
+    videoContainer.style.display = "block";
+});
+
