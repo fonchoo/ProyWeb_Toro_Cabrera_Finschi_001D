@@ -1,0 +1,31 @@
+* {
+    margin: 0; /* Establece el margen en 0 para todos los elementos */
+    padding: 0; /* Establece el relleno en 0 para todos los elementos */
+    box-sizing: border-box; /* Hace que el modelo de caja incluya el borde en las medidas */
+}
+
+body {
+    background-color: blanchedalmond; /* Establece el color de fondo para el cuerpo del documento */
+}
+
+h1 {
+    text-align: center; /* Centra el texto del encabezado h1 */
+}
+
+main {
+    display: grid; /* Utiliza el modelo de diseño grid */
+    grid-template-columns: 1fr 1fr 1fr; /* Crea tres columnas con el mismo ancho */
+    gap: 10px; /* Establece un espacio de 10px entre las celdas del grid */
+}
+
+.image_container {
+    display: flex; /* Utiliza el modelo de caja flexible para el contenedor de imágenes */
+}
+
+.image_container img {
+    width: 100%; /* Establece que las imágenes ocupen todo el ancho del contenedor */
+}
+
+article {
+    box-shadow: 0px 0px 1px #000; /* Agrega una sombra alrededor de cada artículo */
+}
