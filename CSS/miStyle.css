@@ -199,64 +199,118 @@ las redes sociales*/
     max-width: 120rem; /*tomara el maximo de 1200 megapixeles.... esto es complementario para el tema de lo responsive */
     margin:0 auto;
 }
-    
-.navegacion-principal{
-    display: flex; /*se habilitan los elementos de izquierda a derecha .. ademas habilita las propiedades de flexbock tendremos accesos a nuevas propiedades */  
-    justify-content: space-evenly ; /*justify content los distribuye horizontalmente.... space between los separa*/    
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header{
+    background-color: burlywood;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
-}
-    
-.navegacion-principal a { /*para modificar las palabras dentro del menu*/
-    
-    text-decoration: none; /*para eliminar el subrayado de los enlaces*/
-    color:aliceblue; /*color a las palabras*/
-    font-size: 1rem;
-    font-weight: bold; /*para dejar la palabra en negrita*/
-    padding: 1rem; /*esto hara que todo el entorno de las letras al llevar el puntero se visualice 
-    el color que coloque abajo en .navegacion-principal a:hover ... sera de color negro*/  
-}
-    
-.navegacion-principal a:hover{ /* esto hace que las palabras de la clase de navagacion-principal a tomen un color de fondo (color chocolate que fue el que elegi) al llevar el puntero */
-    background-color: tan;
-    color:black; /*cambiara el color de las palabras al acercar el puntero eran blancas queran en negras*/
-    border-radius: 30px;
-    
+    height: 70px;
+    width: 100%;
+    padding: 5px 10%;
+    font-family: 'Nunito', sans-serif;
 }
 
-.img-nav {
-    max-width: 200px; /* Establece el ancho máximo de la imagen de navegación en 60 píxeles */
-    height: 80px; /* Establece la altura de la imagen de navegación en 60 píxeles */
+.header .logo{
+    margin-right: auto;
 }
 
-.back a {
-    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces dentro del elemento .back */
+.header .logo img{
+    height: 60px;
+    width: auto;
+    transition: all 0.3s;
 }
+
+.header .nav-links{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.header .nav-links li{
+    display: inline-block;
+}
+
+.header .nav-links li:hover{
+    transition: all 0.3s;
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: lightslategray;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover{
+    color: bisque;
+}
+
+.header .btn button{
+    font-weight: 700;
+    padding: 10px 25px;
+    border: none;
+    color: lightslategray;
+    background-color: wheat;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-left: 50px;
+}
+
+
+.header .btn button:hover{
+    background-color: lightslategray;
+    color: bisque;
+    transform: scale(1.2);
+}
+
+#icon-register{
+    cursor: pointer;
+    color: bisque;
+    transition: all 0.3s;
+    transform: scale(1.2);
+}
+
+#icon-register:hover{
+    color: lightslategray;
+}
+
+.fadein{
+    animation: fadein 1s forwards;
+}
+
+@keyframes fadein{
+    from{opacity: 0;}
+    to {opacity: 1;}
+}
+
 
 .back {
     text-align: center; /* Centra horizontalmente el contenido del elemento .back */
 }
 
-input {
-    width: 300px; /* Ajusta el ancho del input */
-    height: 40px; /* Ajusta la altura del input */
-    font-size: 40px; /* Ajusta el tamaño del texto */
-    margin-bottom: 10px; /* Agrega espacio entre el input y los botones */
-    align-items: center;
+#clock {
+    font-size: 24px;
+    text-align: left;
 }
-button {
+ .contenedor-botones button {
     width: 70px; /* Ajusta el ancho de los botones */
     height: 70px; /* Ajusta la altura de los botones */
     font-size: 40px; /* Ajusta el tamaño del texto */
     margin: 5px; /* Agrega espacio entre los botones */
     align-items: center;
-
 }
+
 .contenedor-botones {
     margin-top: 30px;
     text-align: center;
-}
-#clock {
-    font-size: 24px;
-    text-align: left;
-
 }

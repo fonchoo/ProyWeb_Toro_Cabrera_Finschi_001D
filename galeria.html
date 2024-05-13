@@ -15,24 +15,26 @@
 <body>
     <!-- Encabezado -->
     <h1 align="center">PetDog & Amigos</h1>
-    <div class="nav-bg">
-        <nav class="navegacion-principal contenedor"> <!-- Barra de navegación -->
-            <img class="img-nav" src="images/logo.jpg" alt=""> <!-- Logo -->
-            <a href="index.html">Inicio</a> <!-- Enlace a la página de inicio -->
-            <a href="pagina2/quienessomos.html">Quienes Somos</a> <!-- Enlace a la página "Quienes Somos" -->
-            <a href="#">Galeria</a> <!-- Enlace a la propia galería -->
-        </nav>
-    </div>
+    <div class="fadein">
+        <header class="header">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Logo PetDogs&Amigos">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="btn"><button>Inicio</button></a></li>
+                    <li><a href="quienessomos.html" class="btn"><button>Quienes Somos</button></a></li>
+                    <li><a class="btn"><button disabled>Inicio</button></a></li>
+                    <li><a href="razas.html" class="btn"><button>Razas de perros</button></a></li>
+                    <li><a href="FormRegistro.html"><i class="fa-solid fa-user" id="icon-register"></i></a></li>
+                </ul>
+            </nav> 
+        </header>
     <div id="clock"></div>
     <h1 class="h1">Galeria de productos</h1> <!-- Título de la galería -->
     <h2 class="h2">Si desea calcular el precio de nuestro productos(por si desea comprar más de uno) utilice nuestra calculadora: </h2>
     <div class="back">
         <a href="calculadora.html">  Calculadora</a>
-    </div>
-    <h2 class="h2">Si desea ver datos de perros, los cuales le pueden ser de ayuda a la hora de elegir un producto, haga click aqui: </h2>
-    <div class="back">
-        <a href="razas.html"> Razas de perros</a>
-    </div>
     <div class="contenedor-imagenes"> <!-- Contenedor de imágenes -->
         <div class="fila1"> <!-- Fila 1 de imágenes -->
             <a href="LindoCat.html"><img class="imagen" src="images/LindoCat2.png" alt="LindoCat"></a> <!-- Imagen 1 con enlace a la página LindoCat.html -->
