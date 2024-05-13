@@ -322,6 +322,10 @@ las redes sociales*/
     font-size: 15px;
 }
 
+#clock {
+    font-size: 24px;
+}
+
 @media screen and (max-widht:800px) {
     .pie-pagina .grupo-1{
         width: 100%;
@@ -331,8 +335,6 @@ las redes sociales*/
     }
     
 }
-
-
 
 
 /* Estilos para pantallas pequeñas */

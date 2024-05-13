@@ -103,5 +103,4 @@ function displayTime() {
 setInterval(displayTime, 1000); // Llama a la función displayTime() cada segundo para actualizar el reloj
 displayTime(); // Muestra la hora actual al cargar la página
 
-
-//hasta aqui
+//hasta aqui reloj
