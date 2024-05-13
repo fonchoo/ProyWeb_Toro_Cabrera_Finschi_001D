@@ -5,8 +5,6 @@
     margin: 0;
     padding: 0;
     font-size: 20px;
-    text-decoration: none;
-    list-style: none;
 }
 
 .header{
@@ -127,13 +125,7 @@
 .pie-pagina{
     width: 100%;
     background-color: dimgray;
-    margin-top: 230px;
-    max-width: 120rem;
-    min-width: auto;
-    font-family: 'Nunito', sans-serif;
-}
-.box1{
-    margin-right: 200px;
+    margin-top: auto;
 }
 
 .pie-pagina .grupo-1{
@@ -143,7 +135,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
-    padding: 10px 0px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -163,19 +154,13 @@
 
 .pie-pagina .grupo-1 .box h2{
     color: #fff;
-    margin-bottom: 25px;
-    font-size: 20px;
-}
-
-.pie-pagina .grupo-1 .box h2{
-    color: #fff;
-    margin-bottom: 25px;
-    font-size: 20px;
+    font-size: 10px;
 }
 
 .pie-pagina .grupo-1 .box p{
     color: #efefef;
     margin-bottom: 10px;
+    font-size: 10px;
 }
 
 .pie-pagina .grupo-1 .red-social a{
@@ -192,11 +177,6 @@
     border-radius: 50%;
 }
 
-.pie-pagina .grupo-1 .red-social a:hover{
-    transition: all 0.3;
-    transform: scale(1.2);
-}
-
 #face:hover{
     color: aqua;  
 }
@@ -204,7 +184,6 @@
 #insta:hover{
     color: fuchsia;
 }
-
 /* Hasta aca se edita como se vera el nombre de los integrantes y el mostrar
 las redes sociales*/
 
@@ -226,7 +205,8 @@ las redes sociales*/
         grid-gap:50px;
         padding: 45px 0px
     }
-}   
+    
+}
 
 .cont{
     display: grid;
