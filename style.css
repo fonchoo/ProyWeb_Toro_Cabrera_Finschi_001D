@@ -246,16 +246,10 @@ h3{
     color: red;
 }
 
-
-
-
-/*pie de pagina*/
-/* Codigo para el pie de pagina o footer */
-
 .pie-pagina{
     width: 100%;
     background-color: dimgray;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .pie-pagina .grupo-1{
@@ -265,7 +259,6 @@ h3{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
-    padding: 20px 0px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -285,13 +278,13 @@ h3{
 
 .pie-pagina .grupo-1 .box h2{
     color: #fff;
-    margin-bottom: 25px;
-    font-size: 20px;
+    font-size: 10px;
 }
 
 .pie-pagina .grupo-1 .box p{
     color: #efefef;
     margin-bottom: 10px;
+    font-size: 10px;
 }
 
 .pie-pagina .grupo-1 .red-social a{
@@ -338,6 +331,9 @@ las redes sociales*/
     }
     
 }
+
+
+
 
 /* Estilos para pantallas pequeñas */
 @media screen and (max-width: 600px) {
