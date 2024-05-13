@@ -104,3 +104,5 @@ setInterval(displayTime, 1000); // Llama a la función displayTime() cada segund
 displayTime(); // Muestra la hora actual al cargar la página
 
 //hasta aqui reloj
+
+
