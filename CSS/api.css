@@ -13,19 +13,26 @@ h1 {
 }
 
 main {
-    display: grid; /* Utiliza el modelo de diseño grid */
-    grid-template-columns: 1fr 1fr 1fr; /* Crea tres columnas con el mismo ancho */
-    gap: 10px; /* Establece un espacio de 10px entre las celdas del grid */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
 }
 
-.image_container {
-    display: flex; /* Utiliza el modelo de caja flexible para el contenedor de imágenes */
+.image-container {
+    display: flex;
+    justify-content: center;
 }
 
-.image_container img {
-    width: 100%; /* Establece que las imágenes ocupen todo el ancho del contenedor */
+.image-container img {
+    width: 80%; /* Reduce el ancho de las imágenes al 80% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
 article {
-    box-shadow: 0px 0px 1px #000; /* Agrega una sombra alrededor de cada artículo */
+    box-shadow: 0px 0px 1px #000;
+    box-shadow: 0px 0px 1px #000;
+    padding: 10px; /* Agrega un poco de padding para que se vea más limpio */
+    background-color: #f9f9f9; /* Color de fondo para destacar las imágenes */
+    border-radius: 5px; /* Bordes redondeados para una apariencia más suave */
 }
