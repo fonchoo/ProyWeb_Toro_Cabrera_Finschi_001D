@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family:'Nunito', sans-serif;
+  font-size: 20px;
 }
 body{
   margin: 0;
@@ -98,4 +99,87 @@ input[type="submit"]{
 input[type="submit"]:hover{
   border-color: #2691d9;
   transition: .5s;
+}
+
+.header{
+  background-color: burlywood;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  padding: 5px 10%;
+  font-family: 'Nunito', sans-serif;
+}
+
+.header .logo{
+  margin-right: auto;
+}
+
+.header .logo img{
+  height: 60px;
+  width: auto;
+  transition: all 0.3s;
+}
+
+.header .nav-links{
+  list-style: none;
+}
+
+.header .nav-links li{
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.header .nav-links li:hover{
+  transition: all 0.3s;
+}
+
+.header .nav-links a{
+  font-size: 700;
+  color: lightslategray;
+  text-decoration: none;
+}
+
+.header .nav-links li a:hover{
+  color: bisque;
+}
+
+.header .btn button{
+  font-weight: 700;
+  padding: 10px 25px;
+  border: none;
+  color: lightslategray;
+  background-color: wheat;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-left: 50px;
+}
+
+
+.header .btn button:hover{
+  background-color: lightslategray;
+  color: bisque;
+  transform: scale(1.2);
+}
+
+#icon-register{
+  cursor: pointer;
+  color: bisque;
+  transition: all 0.3s;
+  transform: scale(1.2);
+}
+
+#icon-register:hover{
+  color: lightslategray;
+}
+
+.fadein{
+  animation: fadein 1s forwards;
+}
+
+@keyframes fadein{
+  from{opacity: 0;}
+  to {opacity: 1;}
 }
