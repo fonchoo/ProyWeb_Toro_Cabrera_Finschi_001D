@@ -9,13 +9,13 @@
 </head>
 <body>
 
-    <h1 class="titulo">PetDog & Amigos</h1>
     <div class="nav-bg">
         <nav class="navegacion-principal contenedor1"> <!--navegacion-princiapl y contenedor(dos atributos de class)-->
             <img class="img-nav" src="../ProyWeb_Toro_Cabrera_Finschi_001D/imagenes/logo.jpg" alt="">
             <a href="../index.html">Inicio</a>  <!--ENLAZAR CON ESA PAGINA -->
             <a href="../ProyWeb_Toro_Cabrera_Finschi_001D/quienessomos.html">Quienes Somos</a>
             <a href="../galeria.html">Galeria</a>   <!--ENLAZAR CON ESA PAGINA -->
+            <a href="#">Raza de Perros</a>          <!--ENLAZAR CON ESA PAGINA -->
             <a href="../ProyWeb_Toro_Cabrera_Finschi_001D/adopcion.html">Adopcion</a>
         </nav>
     </div>
@@ -27,22 +27,22 @@
                 <h1>Formulario</h1>
                 <div>
                     <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" placeholder="Maca">
+                    <input type="text" id="nombre" placeholder="Gabriel">
                     <span id="errorNombre" class="error"></span>
                 </div>
                 <div>
                     <label for="apellido">Apellido</label>
-                    <input type="text" id="apellido" placeholder="Maca">
+                    <input type="text" id="apellido" placeholder="Boric">
                     <span id="errorApellido" class="error"></span>
                 </div>
                 <div>
                     <label for="mail">Mail</label>
-                    <input type="text" id="mail" placeholder="maca@maca.com">
+                    <input type="text" id="mail" placeholder="presi@gmail.com">
                     <span id="errorMail" class="error"></span>
                 </div>
                 <div>
                     <label for="mensaje">Mensaje</label>
-                    <input type="text" id="mensaje">
+                    <input type="text" id="mensaje" placeholder="Escribe tu mensaje aqui, nos contactaremos contigo mediante tu mail">
                     <span id="errorMensaje" class="error"></span>
                 </div>
                 <input type="submit" onclick=' return enviarFormulario()' value="Enviar">
