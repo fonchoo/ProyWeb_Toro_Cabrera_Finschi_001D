@@ -22,6 +22,7 @@ h2 {
     max-width: 120rem; /* Ancho máximo del contenedor de imágenes */
     align-items: auto; /* Alineación de elementos secundarios (imágenes) */
     height: auto; /* Altura automática para ajustarse al contenido */
+    margin-left: 150px;
 }
 
 .fila1, .fila2 {
@@ -70,6 +71,10 @@ h2 {
         height: 300px;
         /* Altura ajustada automáticamente */
     }
+    .contenedor-imagenes {
+        margin-left: 0px;
+    }
+    
 }
 
 @media(max-width:890px) {
