@@ -6,6 +6,11 @@
     <title>Formulario</title>
     <link href="style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f879910058.js" crossorigin="anonymous"></script> 
+    <style>
+        #clock {
+            position: absolute;
+      }
+    </style>
 </head>
 <body>
 
@@ -19,8 +24,9 @@
             <a href="../ProyWeb_Toro_Cabrera_Finschi_001D/adopcion.html">Adopcion</a>
         </nav>
     </div>
+    <div id="clock"></div>
     
-
+    
     <main class="mainformulario">
         <div class="contenedor-formulario">
             <form action="" class="formulario" id="formulario">
@@ -71,6 +77,24 @@
             <small>&copy; 2024 <b>PET DOG & AMIGOS</b> -  Todos los Derechos Reservados.</small>
         </div>
     </footer>
+
+    <!--Tuve que agregar estas lineas de codigo para que me tomara el reloj en esta pagina-->
+    <script>
+        function updateClock() {
+            const clock = document.getElementById('clock');
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            clock.textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        // Actualiza el reloj cada segundo
+        setInterval(updateClock, 1000);
+        // Inicializa el reloj al cargar la página
+        updateClock();
+    </script>
+
 
     <script src="../ProyWeb_Toro_Cabrera_Finschi_001D/javascript.js"></script>
 
