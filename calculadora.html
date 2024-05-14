@@ -25,11 +25,22 @@
                 <li><a href="index.html" class="btn"><button>Inicio</button></a></li>
                 <li><a href="quienessomos.html" class="btn"><button>Quienes Somos</button></a></li>
                 <li><a class="btn"><button disabled>Galeria</button></a></li>
-                <li><a href="razas.html" class="btn"><button>Razas de perros</button></a></li>
                 <li><a href="adopcion.html" class="btn"><button>Adopcion</button></a></li>
+                <li><a href="razas.html" class="btn"><button>Razas de perro</button></a></li>
                 <li><a href="FormRegistro.html"><i class="fa-solid fa-user" id="icon-register"></i></a></li>
             </ul>
         </nav> 
+        <a onclick="openNav()" class="menu"><button>Menu</button></a>
+        <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()" href="" class="close">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Inicio</a>
+                <a href="quienessomos.html">Quienes Somos</a>
+                <a href="adopcion.html">Adopcion</a>
+                <a href="razas.html">Razas de perro</a>
+                <a href="FormRegistro.html">Registro</a>
+            </div>
+        </div>
     </header>
     <div id="clock"></div>
     <div class="contenedor-botones">
@@ -56,6 +67,7 @@
         <button onclick="appendValue('/')">/</button></div>
 
     <script src="javascript/java.js"></script>
+    <script  src="javascript/nav.js"></script>
 </body>
 <footer class="pie-pagina">
     <div class="grupo-1">
