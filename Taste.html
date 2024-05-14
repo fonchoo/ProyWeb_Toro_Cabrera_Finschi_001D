@@ -10,7 +10,7 @@
     <style>
         /* Estilos para el contenedor principal */
         .pie-pagina{
-            margin-top: 100px;
+            margin-top: 125px;
         }  
         .contenedor {
             display: flex; /* Utiliza Flexbox para el diseño */
@@ -38,18 +38,22 @@
 
 <body>
     <!-- Encabezado -->
-    <div id="clock"></div>
-    <h1 align="center">PetDog & Amigos</h1>
-
-    <!-- Barra de navegación -->
-    <div class="nav-bg">
-        <nav class="navegacion-principal contenedor1">
-            <img class="img-nav" src="images/logo.jpg" alt=""> <!-- Logo -->
-            <a href="index.html">Inicio</a> <!-- Enlace a la página de inicio -->
-            <a href="#">Quienes Somos</a> <!-- Enlace a la página "Quienes Somos" -->
-            <a href="galeria.html">Galeria</a> <!-- Enlace a la galería -->
-        </nav>
-    </div>
+    <div class="fadein">
+        <header class="header">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Logo PetDogs&Amigos">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="btn"><button>Inicio</button></a></li>
+                    <li><a href="quienessomos.html" class="btn"><button>Quienes Somos</button></a></li>
+                    <li><a class="btn"><button disabled>Galeria</button></a></li>
+                    <li><a href="razas.html" class="btn"><button>Razas de perros</button></a></li>
+                    <li><a href="adopcion.html" class="btn"><button>Adopcion</button></a></li>
+                    <li><a href="FormRegistro.html"><i class="fa-solid fa-user" id="icon-register"></i></a></li>
+                </ul>
+            </nav> 
+        </header>
     <div id="clock"></div>
     <script src="javascript/java.js"></script>
 

@@ -100,7 +100,7 @@ getRazas(data => {
                             <div class="image-container">
                                 <img src="${imageUrl}" alt="raza" style="max-width: 100px; height: auto;">
                             </div>
-                            <h2>Nombre de raza: ${translatedName}</h2>
+                            <h2>${translatedName}</h2>
                             <span> Temperamento: ${translatedTemperament} </span>
                             <p>Proposito de crianza: ${translatedBredFor}</p>
                             <p>Grupo de raza: ${translatedBreedGroup ? translatedBreedGroup : ''}</p>
