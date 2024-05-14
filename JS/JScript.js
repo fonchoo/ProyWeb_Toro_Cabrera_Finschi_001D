@@ -1,28 +1,20 @@
-const formulario = document.getElementById('formulario');
+var nombre = document.getElementById('nombre');
+var errorName = document.getElementById('errorName');
 
-const inputs = document.querySelectorAll('#formulario input');
+function validarForm() {
+    var hayErrores = false;
 
-const expresiones = {
-    nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
-    apellido: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
-    correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-    password: /^.{4,12}$/
-}
+    var menjsajeError = [];
 
-const campos = {
-    nombre: false,
-    apellido: false,
-    correo: false,
-    password: false
-}
-
-const validarFormulario = (e) => {
-    switch (e.target.name){
-        case "nombre":
-            validarCampo(expresiones.nombre, e.target, 'nombre');
-        break;
-        case "apellido":
-            validarCampo(expresiones.nombre, e.target, 'apellido');
-        break;
+    if(nombre.value.trim() === ''){
+        menjsajeError.push('Ingresa tu nombre');
+        errorName.textContent = 'Ingresa tu nombre';
+        hayErrores = true;
+    } else if (!/^[A-Za-záéíóúÁÉÍÓÚñÑ]+$/.test(nombre.value)) {
+        menjsajeError.push('El nombre solo puede contener letras');
+        errorName.textContent = 'El nombre solo puede contener letras';
+        hayErrores = true;
+    } else{
+        errorName.textContent= '';
     }
 }
