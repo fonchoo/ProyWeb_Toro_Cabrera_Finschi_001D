@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f879910058.js" crossorigin="anonymous"></script> 
+    <style>
+        #clock {
+            position: absolute;
+      }
+    </style>
+</head>
+<body>
+
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor1"> <!--navegacion-princiapl y contenedor(dos atributos de class)-->
+            <img class="img-nav" src="../ProyWeb_Toro_Cabrera_Finschi_001D/imagenes/logo.jpg" alt="">
+            <a href="../index.html">Inicio</a>  <!--ENLAZAR CON ESA PAGINA -->
+            <a href="../ProyWeb_Toro_Cabrera_Finschi_001D/quienessomos.html">Quienes Somos</a>
+            <a href="../galeria.html">Galeria</a>   <!--ENLAZAR CON ESA PAGINA -->
+            <a href="#">Raza de Perros</a>          <!--ENLAZAR CON ESA PAGINA -->
+            <a href="../ProyWeb_Toro_Cabrera_Finschi_001D/adopcion.html">Adopcion</a>
+        </nav>
+    </div>
+    <div id="clock"></div>
+    
+    
+    <main class="mainformulario">
+        <div class="contenedor-formulario">
+            <form action="" class="formulario" id="formulario">
+                <h1>Formulario</h1>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Gabriel">
+                    <span id="errorNombre" class="error"></span>
+                </div>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" placeholder="Boric">
+                    <span id="errorApellido" class="error"></span>
+                </div>
+                <div>
+                    <label for="mail">Mail</label>
+                    <input type="text" id="mail" placeholder="presi@gmail.com">
+                    <span id="errorMail" class="error"></span>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje</label>
+                    <input type="text" id="mensaje" placeholder="Escribe tu mensaje aqui, nos contactaremos contigo mediante tu mail">
+                    <span id="errorMensaje" class="error"></span>
+                </div>
+                <input type="submit" onclick=' return enviarFormulario()' value="Enviar">
+    
+            </form>
+        </div>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <h2>INTEGRANTES</h2>
+                <p>Esteban Toro</p>
+                <p>Macarena Cabrera</p>
+                <p>Patricio Finschi</p>
+            </div>
+            <div class="box">
+                <h2>SÍGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/PetDogyAmigos" id="face" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://www.instagram.com/petdogyamigos" id="insta" class="fa fa-instagram" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>PET DOG & AMIGOS</b> -  Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+
+    <!--Tuve que agregar estas lineas de codigo para que me tomara el reloj en esta pagina-->
+    <script>
+        function updateClock() {
+            const clock = document.getElementById('clock');
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            clock.textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        // Actualiza el reloj cada segundo
+        setInterval(updateClock, 1000);
+        // Inicializa el reloj al cargar la página
+        updateClock();
+    </script>
+
+
+    <script src="../ProyWeb_Toro_Cabrera_Finschi_001D/javascript.js"></script>
+
+</body>
+</html>
