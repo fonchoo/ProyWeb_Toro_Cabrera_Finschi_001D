@@ -124,28 +124,34 @@ input[type="submit"]:hover{
 
 .header .nav-links{
   list-style: none;
+  margin-top: 20px;
 }
 
 .header .nav-links li{
   display: inline-block;
-  margin-top: 20px;
 }
 
-.header .nav-links li:hover{
+.header .nav-links li:hover,
+.overlay a:hover{
+  transform: scale(1.1);
   transition: all 0.3s;
 }
 
 .header .nav-links a{
   font-size: 700;
   color: lightslategray;
-  text-decoration: none;
 }
 
 .header .nav-links li a:hover{
   color: bisque;
 }
 
-.header .btn button{
+.menu{
+  display: none;
+}
+
+.header .btn button,
+.header .menu button{
   font-weight: 700;
   padding: 10px 25px;
   border: none;
@@ -153,26 +159,83 @@ input[type="submit"]:hover{
   background-color: wheat;
   border-radius: 50px;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.3s ease 0s;
   margin-left: 50px;
 }
 
 
-.header .btn button:hover{
+.header .btn button:hover,
+.header .menu button:hover{
   background-color: lightslategray;
   color: bisque;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
-#icon-register{
-  cursor: pointer;
-  color: bisque;
-  transition: all 0.3s;
-  transform: scale(1.2);
+@media screen and (max-width:1000px){
+  .nav-links, .btn{
+      display: none;
+  }
+  .menu{
+      display: inherit;
+  }
 }
 
-#icon-register:hover{
-  color: lightslategray;
+/*Nav*/
+.header a{
+  text-decoration: none;
+}
+
+.header .overlay{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(33, 49, 63, .95); 
+  overflow: hidden;
+  transition: all 0.3s ease 0s;
+}
+
+.header .overlay .overlay-content{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .overlay a{
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+  font-weight: 700;
+  color: #eceff1;
+}
+
+.header .overlay a:hover,
+.header .overlay a:focus{
+  color: #ffbc0e;
+}
+
+.header .overlay .close{
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 65px;
+}
+
+@media screen and (max-height:450px){
+  .header .overlay a{
+      font-size: 20px;
+  }
+
+  .header .overlay .close{
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+  }
 }
 
 .fadein{
