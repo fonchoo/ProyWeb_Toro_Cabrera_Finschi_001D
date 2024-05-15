@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800;1,800&display=swap");
 
 * {
+  margin: 0;
+  padding: 0;
 	box-sizing: border-box;
+  font-size: 20px;
 }
 
 body {
 	font-family: 'Roboto', sans-serif;
-    font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 main {
@@ -23,7 +26,7 @@ main {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 20px;
-    margin-top: auto;
+  margin-top: auto;
 }
 
 .formulario__label {
@@ -314,4 +317,16 @@ main {
 @keyframes fadein{
   from{opacity: 0;}
   to {opacity: 1;}
+}
+
+#icon-register{
+  cursor: pointer;
+  color: bisque;
+  transition: all 0.3s;
+  transform: scale(1.2);
+  transform: translateX(50px);
+}
+
+#icon-register:hover{
+  color: lightslategray;
 }
